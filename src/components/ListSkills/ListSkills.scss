@@ -1,0 +1,25 @@
+
+.list-skills, .list-skills__neon{
+    .skillbar{
+        width: 48%;
+        display: inline-block;
+        margin-right: 20px;
+
+        &:nth-child(2n){
+            margin-left: 20px;
+            margin-right: 0;
+        }
+    }
+}
+
+.list-skills{
+    .skillbar{
+
+    }
+}
+
+.list-skills__neon{
+    .skillbar{
+
+    }
+}

@@ -1,0 +1,12 @@
+@import '../scss/colors';
+
+.bg{
+
+    background-color: $white;
+
+    &__neon{
+
+       background-color: $bg-dark;
+
+    }
+}
