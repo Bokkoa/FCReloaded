@@ -8,9 +8,15 @@ import AboutMe from '../components/AboutMe';
 import { useNeon } from '../hooks/useNeon';
 
 export default function Index(){
+  // let isStored = false;
 
-  const isStored = JSON.parse( localStorage.getItem('neon') );
-  const [ neon, setNeon] = React.useState(isStored)
+  // if(typeof window !== 'undefined'){
+
+  //   isStored = JSON.parse( localStorage.getItem('neon') );
+    
+  // }
+
+  const [ neon, setNeon] = React.useState(false)
   useNeon(neon);
 
   const handler = () => {

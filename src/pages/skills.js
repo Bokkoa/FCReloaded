@@ -19,7 +19,7 @@ import {  frontendSkills,
 export default function Index(){
 
   return (
-    <BasicLayout>
+    <BasicLayout menuColor="#141321" >
       <Container className="skills">
         
         <div className="skills__block">

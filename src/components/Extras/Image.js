@@ -3,7 +3,7 @@ import { graphql, StaticQuery} from 'gatsby';
 
 import Img from 'gatsby-image';
 
-export default function Image({fileName, alt}) {
+export default function Image({fileName, alt, classStyle=null}) {
 
     return (
         <StaticQuery 
@@ -15,7 +15,7 @@ export default function Image({fileName, alt}) {
                             node {
                                 relativePath
                                 childImageSharp{
-                                    fluid{
+                                    fluid(quality: 90){
                                         ...GatsbyImageSharpFluid
                                     }
                                 }
@@ -33,7 +33,7 @@ export default function Image({fileName, alt}) {
 
                 if ( !image ) return null;
 
-                return <Img alt={alt} fluid={image.node.childImageSharp.fluid } />
+                return <Img alt={alt} fluid={image.node.childImageSharp.fluid } style={{ borderRadius: '180px'}} className={classStyle || ''}/>
             }}
         />
     )

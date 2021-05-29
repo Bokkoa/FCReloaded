@@ -1,23 +1,62 @@
+@import '../../scss/breakpoints';
 
 .list-skills, .list-skills__neon{
     .skillbar{
-        width: 48%;
+        width: 90%;
         display: inline-block;
-        margin-right: 20px;
+        margin-left: -2vh;
+        margin-top: 5px;
 
         &:nth-child(2n){
-            margin-left: 20px;
             margin-right: 0;
+            margin-left: 2vh;
+
+        }
+
+        .skillbar-bar{
+            border-radius: 0 !important;
+        }
+
+    }
+}
+
+
+.skill-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 0 !important;
+}
+
+@media(max-width: $mediumScreenBreakpoint){
+    .list-skills{
+        .skillbar{
+            
+            width: 80%;
+            margin-left: 2vh;
+            
+            &:nth-child(2n){
+                margin-left: 2vh;
+            }
+            
+        }
+    } 
+}
+@media(max-width: $maxMobileBreakpoint){
+
+    .list-skills{
+        .skillbar{
+            
+            width: 100%;
+            margin-left: 3vh;
+            
+            &:nth-child(2n){
+                margin-left: 0;
+            }
+            
         }
     }
 }
-
-.list-skills{
-    .skillbar{
-
-    }
-}
-
+    
 .list-skills__neon{
     .skillbar{
 

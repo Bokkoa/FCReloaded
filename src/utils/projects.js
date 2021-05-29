@@ -1,18 +1,20 @@
 
-import google from '../images/projects/google.png';
+import contaliteApp from '../images/projects/contalite_app.png';
 import twitter from '../images/projects/twitter.png';
 
 const projects =  [
     {
-        title: "Google search",
-        description: "Un buscador muy chido",
-        url: "https://google.es",
-        image: google,
+        title: "Contalite",
+        description: `Sistema de facturación electrónica y contabilidad, desarrollado con laravel y react, 
+                      sirviendose de distintos proveedores para temas de pago y transaciones de timbrados de CFDI (proyecto aún en desarrollo)`,
+        url: "https://app.contalite.com/",
+        image: contaliteApp,
     },
     {
-        title: "Twitter",
-        description: "Una red social sensible",
-        url: "https://twitter.com",
+        title: "Contalite Admin.",
+        description: `Sistema de gestión de declaraciones, opiniones de cumplimiento y planes del servicio contable, incluye estadísticas de la
+        actividad mensual dentro del sistema de Contalite.`,
+        url: "https://apanel.contalite.com/",
         image: twitter,
     }
 ];

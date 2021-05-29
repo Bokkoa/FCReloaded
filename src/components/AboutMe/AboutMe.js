@@ -6,10 +6,11 @@ import './AboutMe.scss';
 
 const AboutMe = ({neon}) => {
     return (
-        <Container className={ neon ? 'about-me__neon' : 'about-me'}>
+        <Container className={ neon ? 'about-me__neon animate__fadeInUp animate__animated' 
+                                    : 'about-me animate__fadeInUp animate__animated'}>
             <p>
                 Ingeniero informático, desarrollador fullstack con 2 años de experiencia, he gestionado equipos pequeños y 
-                utilizado variedad de tecnologías, ¡nunca se para de aprender!.
+                utilizado variedad de tecnologías, ¡Nunca se para de aprender!.
             </p>
             <hr />
 

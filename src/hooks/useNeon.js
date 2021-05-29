@@ -1,16 +1,15 @@
 import { useEffect } from 'react';
 
 
-export const useNeon = ( neonBool ) => {
+export const useNeon = ( neonBool) => {
 
     
     useEffect(() => {
         
-        console.log("El neonbool", typeof neonBool);
-        console.log(neonBool == true);
+        console.log(neonBool === true);
         const root = document.body;
         root.className = '';
-        root.classList.add( neonBool == true ? 'bg__neon' : 'bg');
+        root.classList.add( neonBool === true ? 'bg__neon' : 'bg');
 
     }, [neonBool]);
 

@@ -6,10 +6,10 @@ import projects from '../utils/projects';
 
 export default function Index(){
   return (
-    <BasicLayout>
+    <BasicLayout menuColor="#141321">
         <Container className="projects">
             <h1>Proyectos</h1>
-
+            <hr/>
             <Row>
               {projects.map( (project, index) => (
                 <Col key={index} xs={12} sm={4} className="project">
@@ -23,13 +23,15 @@ export default function Index(){
                             {project.title}
                         </Card.Title>
                         <Card.Text>
-                            project.description
+                            {project.description}
+                        </Card.Text>
+                        <Card.Footer>
                             <a href={project.url} target="_blank" rel="noopener noreferrer">
                                 <Button variant="primary"> 
                                     Ver proyecto
                                 </Button>
                             </a>
-                        </Card.Text>
+                        </Card.Footer>
                     </Card.Body>
                   </Card>
                 </Col>

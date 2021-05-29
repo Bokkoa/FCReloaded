@@ -6,7 +6,8 @@ import './Menu.scss';
 
 const Menu = ({menuColor, neon, handler}) => {
     return (
-        <header className={neon ? 'menu__neon' : 'menu'} style={{ backgroundColor: menuColor || "transparent"}}>
+        <header className={neon ? 'menu__neon animate__animated animate__fadeIn' 
+                                : 'menu animate__animated animate__fadeIn'} style={{ backgroundColor: menuColor || "transparent"}}>
             <Container>
                 <ul>
                     <li>
