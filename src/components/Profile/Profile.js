@@ -11,7 +11,7 @@ import './Profile.scss';
 import Social from './Social';
 import profilePic from '../../images/avatar.png';
 import profilePicNeon from '../../images/avatar-neon.png';
-import Image from '../Extras/Image';
+import Image from '../Image';
      
 const data = [
     {
@@ -41,7 +41,7 @@ const Profile = ({neon}) => {
                     </Col>
 
                     <Col xs={12} md={8} className="info__data">
-                        <span>Hola</span>
+                        <span>¡Saludos!</span>
                         <p>Felipe Cruz</p>
                         <p>Fullstack developer</p>
 
@@ -51,7 +51,7 @@ const Profile = ({neon}) => {
                             return(
                                 <div key={key} className="more-info">
                                     <div className="item">
-                                            <p>{item.title}</p>
+                                            <p style={{ marginRight: '20px'}}>{item.title}</p>
                                             <p>{item.info}</p>
                                     </div>
                                 </div>

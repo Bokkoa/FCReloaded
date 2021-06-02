@@ -5,6 +5,9 @@
 
     .project{
         margin-bottom: 30px;
+        // this set cards to same height on grid
+        align-items: stretch;
+        display: flex;
 
         .image{
             height: 200px;
@@ -13,11 +16,20 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-
         a{
             button{
                 width: 100%;
                 text-transform: uppercase;
+            }
+        }
+        // This fix the card footer on bottom
+        .card{
+            .card-body{
+                display: flex;
+                flex-direction: column;
+            }
+            .card-footer{
+                margin-top: auto;
             }
         }
     }

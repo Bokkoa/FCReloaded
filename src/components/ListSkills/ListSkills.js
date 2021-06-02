@@ -4,7 +4,7 @@ import './ListSkills.scss';
 // import SkillBar from 'react-skills-bars';
 // wait for window component
 
-import Image from '../Extras/Image';
+import Image from '../Image';
 import { Container, Col, Row } from 'react-bootstrap';
 
 const SkillBar = loadable( () => import("react-skills-bars") );
@@ -17,10 +17,10 @@ const ListSkills = ({skills, colors}) => {
                     {skills.map( (skill, index) => {
                         return(
                                 <>
-                                    <Col xs={1} key={index}> 
+                                    <Col xs={2} lg={1} key={index}> 
                                         <Image fileName={skill.src} alt="skill" classStyle="skill-img" />
                                     </Col>
-                                    <Col xs={11} lg={5}>
+                                    <Col xs={9} lg={5}>
                                         <SkillBar key={index} skills={[{type: skill.type, level: skill.level}]} colors={colors} animationDuration={700} />
                                     </Col>
                                 </>

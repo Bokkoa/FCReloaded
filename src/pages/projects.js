@@ -3,6 +3,8 @@ import './projects.scss';
 import BasicLayout from '../layouts/BasicLayout';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import projects from '../utils/projects';
+import ModalProject from '../components/ModalProject';
+import 'animate.css';
 
 export default function Index(){
   return (
@@ -26,11 +28,14 @@ export default function Index(){
                             {project.description}
                         </Card.Text>
                         <Card.Footer>
+                            {project.url.length > 0 &&
                             <a href={project.url} target="_blank" rel="noopener noreferrer">
                                 <Button variant="primary"> 
                                     Ver proyecto
                                 </Button>
                             </a>
+                            }
+                            <ModalProject name={project.name} album={project.album} />
                         </Card.Footer>
                     </Card.Body>
                   </Card>
