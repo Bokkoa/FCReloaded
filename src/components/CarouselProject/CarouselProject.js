@@ -32,13 +32,6 @@ const CarouselProject = ({album}) => {
             </Carousel.Item>
          )
         )}
-          {/* { Array.from( 
-            Array(album.maxNumber).map( ( e, index ) => {
-              console.log( "Entra " );
-              console.log(`${album.path}/0${index+1}`);
-                
-              })
-          )} */}
       </Carousel>
     )
 }

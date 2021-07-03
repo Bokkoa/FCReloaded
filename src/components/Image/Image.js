@@ -15,7 +15,7 @@ export default function Image({fileName, alt, classStyle=null}) {
                             node {
                                 relativePath
                                 childImageSharp{
-                                        fluid(maxWidth: 2048, quality: 90) {
+                                        fluid(maxWidth: 1900, quality: 80) {
                                         ...GatsbyImageSharpFluid
                                     }
                                 }

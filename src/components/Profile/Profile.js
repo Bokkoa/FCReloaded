@@ -4,19 +4,16 @@ import {
     Container,
     Row,
     Col,
-    // Image
 } from 'react-bootstrap';
 import './Profile.scss';
 
 import Social from './Social';
-import profilePic from '../../images/avatar.png';
-import profilePicNeon from '../../images/avatar-neon.png';
 import Image from '../Image';
      
 const data = [
     {
         title: "Teléfono: ",
-        info: "+52 1 33 2495 4452",
+        info: "+52 33 2495 4452",
     },
     {
         title: "Email: ",
@@ -27,7 +24,7 @@ const data = [
 
 const Profile = ({neon}) => {
     return (
-        <div className={neon ? 'profile__neon animate__animated animate__fadeInDown' 
+        <div id="start" className={neon ? 'profile__neon animate__animated animate__fadeInDown' 
                              : 'profile animate__animated animate__fadeInDown'}>
             <div className="wallpaper" />
             <div className="dark" />
@@ -35,9 +32,7 @@ const Profile = ({neon}) => {
             <Container className="box">
                 <Row className="info">
                     <Col xs={12} md={4}>
-                        {/* <Image fileName={neon ? 'avatar-neon.png' : 'avatar.png'} alt="Bokkoa" /> */}
                         <Image fileName='avatar.png' alt="Bokkoa" />
-                        {/* <Image src={ neon ? profilePicNeon : profilePic} fluid  roundedCircle /> */}
                     </Col>
 
                     <Col xs={12} md={8} className="info__data">

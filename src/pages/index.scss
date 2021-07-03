@@ -1,5 +1,9 @@
 @import '../scss/colors';
 
+html {
+    scroll-behavior: smooth;
+}
+
 .bg{
 
     background-color: $white;
