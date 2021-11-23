@@ -12,7 +12,7 @@ const Projects = () => {
                 <hr/>
                 <Row>
                     {projects.map( (project, index) => (
-                    <Col key={index} xs={12} sm={4} className="project">
+                    <Col key={index} xs={12} sm={6} md={6} lg={4} xl={4} className="project">
                         <Card>
                             <div className="image" style={{backgroundImage: `url("${project.image}")`}}>
                                 
@@ -25,10 +25,23 @@ const Projects = () => {
                                 <Card.Text>
                                     {project.description}
                                 </Card.Text>
+                                <hr />
+                                <Card.Subtitle>
+                                    Heramientas utilizadas
+                                </Card.Subtitle>
+                                <Card.Text className="tools">
+                                    {project.tools.map( tool => (
+
+                                        <span className="chip">
+                                            {tool}
+                                        </span>
+                                        
+                                    ))}
+                                </Card.Text>
                                 <Card.Footer>
                                     {project.url.length > 0 &&
                                     <a href={project.url} target="_blank" rel="noopener noreferrer">
-                                        <Button variant="primary"> 
+                                        <Button > 
                                             Ver proyecto
                                         </Button>
                                     </a>

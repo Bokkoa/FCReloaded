@@ -13,11 +13,7 @@ const Menu = ({menuColor, neon, handler}) => {
             <Container>
                 <ul>
                     <li>
-                        <Link   spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500} 
-                                activeClass="active" to="/#start">Inicio</Link>
+                        <Link  to="/#start">Inicio</Link>
                     </li>
                     <li>
                         <Link  to="/#projects">Proyectos</Link>

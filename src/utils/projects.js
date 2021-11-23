@@ -19,6 +19,7 @@ const projects =  [
         url: "https://app.contalite.com/",
         image: contaliteApp,
         album: contaliteAppAlbum,
+        tools: ['Material Ui', 'Laravel', 'Laravel Echo', 'React', 'Axios', 'Xml', 'Sass', 'Mysql'],
     },
     {
         title: "Contalite Admin",
@@ -27,6 +28,7 @@ const projects =  [
         url: "https://apanel.contalite.com/",
         image: contaliteAdm,
         album: contaliteAdminAlbum,
+        tools: ['Material Ui', 'Laravel', 'React', 'Axios', 'Xml', 'Sass', 'Mysql'],
     },
     {
         title: "Laptop Manager",
@@ -35,6 +37,7 @@ const projects =  [
         url: "",
         image: laptopManager,
         album: laptopManagerAlbum,
+        tools: ['Laravel', 'Jquery', 'Blade', 'Ajax', 'Bootstrap'],
     },
     {
         title: "PROFACAD (Formación docente)",
@@ -43,6 +46,8 @@ const projects =  [
         url: "",
         image: profacad,
         album: profacadAlbum,
+        tools: ['Laravel', 'Vuejs', 'Jwt', 'Axios', 'Vuesax'],
+
     }
 ];
 

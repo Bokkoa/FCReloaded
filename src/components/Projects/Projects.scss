@@ -1,4 +1,5 @@
 .projects{
+    margin-top: 30px;
 
     .project{
         margin-bottom: 30px;
@@ -21,13 +22,35 @@
         }
         // This fix the card footer on bottom
         .card{
-            .card-body{
+            &-body{
                 display: flex;
                 flex-direction: column;
             }
-            .card-footer{
+            .tools{
+                margin-bottom: auto;
+            }
+            &-title{
+                font-size: 22px;
+            }
+            &-subtitle{
+                font-size: 18px;
+                margin-bottom: auto;
+            }
+            &-footer{
                 margin-top: auto;
             }
         }
     }
+}
+
+.chip{
+    white-space:nowrap;
+    background-color: #0098d3;
+    border-radius: 9px;
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    margin: 3px;
+    margin-bottom: 3px;
+    padding: 5px;
+    
 }

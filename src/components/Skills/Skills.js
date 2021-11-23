@@ -18,8 +18,10 @@ const Skills = () => {
 
   return (
       <Container id="skills" className="skills">
+            <h2>Skills</h2>
+            <hr />
             <div className="skills__block">
-              <h2>Frontend</h2>
+              <h3>Frontend</h3>
               <ListSkills   data-sal="slide-up"
                             data-sal-duration="2000"
                             data-sal-delay="300"
@@ -28,19 +30,19 @@ const Skills = () => {
                             colors={frontendColors} />
             </div>
             <div className="skills__block">
-              <h2>Backend</h2>
+              <h3>Backend</h3>
               <ListSkills skills={backendSkills} 
                           colors={backendColors} />
             </div>
         
             <div className="skills__block">
-              <h2>Devops</h2>
+              <h3>Devops</h3>
               <ListSkills skills={devopsSkills} 
                           colors={devopsColors} />
             </div>
 
             <div className="skills__block">
-              <h2>Extras</h2>
+              <h3>Extras</h3>
               <ListSkills skills={extraSkills} 
                           colors={extraColors} />
             </div>
